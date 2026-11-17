@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #F1E8D8;
+  font-family: 'DM Sans',sans-serif;
+  color:#263D35;
+  min-height: 100vh;
+}
+header{
+  background-color: #263D35;
+  color:#F1E8D8;
+  padding:22px 45px;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h2{
+  font-family:'Playfair Display',serif;
+  font-size:28px;
+  letter-spacing: 1px;
+}
+.container{
+  display:flex;
+  gap:30px;
+  padding:40px;
+  min-height:calc(100vh-80px);
+}
+.sidebar{
+  width:280px;
+  background-color: #E5D4B8;
+  padding:28px;
+  border-radius:15px;
+  border:1px solid #D6A77A;
+  display:flex;
+  flex-direction: column;
+  gap:18px;
+}
+.sidebar h3{
+  font-family:'Playfair Display',serif;
+  font-size:23px;
+  margin-bottom: 10px;
+}
+.sidebar label{
+  font-size:14px;
+  font-weight:600;
+  margin-bottom: -12px;
+
+}
+.sidebar input , .sidebar select{
+  width:100%;
+  padding:10px;
+  border:1px solid  #C2A783;
+  border-radius:8px;
+  background-color: #F1E8D8;
+  color:#263D35;
+  cursor:pointer;
+  outline:none;
+}
+.sidebar input[type="color"]{
+  height:45px;
+  padding:4px;
+}
+.sidebar input:focus, .sidebar select:focus{
+  border-color:#B66B52;
+}
+.editor{
+  flex:1;
+  background-color:#FAF6EF;
+  padding:30px;
+  border-radius: 15px;
+  border:1px solid #D6A77A;
+  display: flex;
+  flex-direction:column;
+  gap:20px;
+}
+.editor h3{
+  font-family:'Playfair Display',serif;
+  font-size:25px;
+}
+#editorbox{
+  background-color: #FFFFFF;
+  color:#263D35;
+  min-height:400px;
+  padding:25px;
+  border:1px solid #D6A77A;
+  border-radius:10px;
+  font-size:17px;
+  line-height:1.7;
+  outline:none;
+  transition:0.3 ease;
+}
+#editorbox:focus{
+  border-color:#B66B52;
+  box-shadow:0 0 0 3px rgba(182,107, 82.0.12);
+}
+@media(max-width:768px){
+  .container{
+    flex-direction: column;
+    padding:20px;
+  }
+  .sidebar{
+    width:100%;
+
+  }
+  .editor{
+    width:100%;
+
+  }
+  header{
+    padding:20px;
+
+  }
+  #editorbox{
+    min-height:300px;
+  }
+}
