@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeCanva</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>
+      CodeCanva
+    </h2>
+  </header>
+
+  <main class="container">
+    <aside class="sidebar">
+      <h3>Customize Editor</h3>
+      <label>Background Color</label>
+      <input type="color" id="bgcolor">
+
+      <label>Text Color</label>
+
+      <input type="color" id="textColor">
+
+      <label>Font Family</label>
+      <select id="fontfamily">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Verdana">Verdana</option>
+        <option value="Times New Roman">Times New Roman</option>
+      </select>
+    </aside>
+
+
+    <section class="editor">
+        <h3>Editor Box</h3>
+        
+        <div contenteditable="true" id="editorbox">
+          Start Writing here...
+        </div>
+    </section>
+  </main>
+</body>
+</html>
